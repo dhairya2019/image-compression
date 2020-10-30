@@ -1,36 +1,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
-// function to calculate word length
-int codelen(char* code)
-{
-	int l = 0;
-	while (*(code + l) != '\0')
-		l++;
-	return l;
-}
-
-\
-void strconcat(char* str, char* parentcode, char add)
-{
-	int i = 0;
-	while (*(parentcode + i) != '\0')
-	{
-		*(str + i) = *(parentcode + i);
-		i++;
-	}
-	if (add != '2')
-	{
-		str[i] = add;
-		str[i + 1] = '\0';
-	}
-	else
-		str[i] = '\0';
-}
-
-
-
 int main()
 {
 	int i, j;
